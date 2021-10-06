@@ -1,8 +1,7 @@
 import "./App.css";
-import Home from "./pages/Home";
-import { Router, Route, Switch } from "wouter";
+import { Route, Switch } from "wouter";
 import DirectorsList from "./components/Directors/directorsList";
-import Navbar from "./components/Navbar";
+/* import Navbar from "./components/Navbar"; */
 import React, { Suspense } from "react";
 
 const HomePage = React.lazy(() => import("./pages/Home"));

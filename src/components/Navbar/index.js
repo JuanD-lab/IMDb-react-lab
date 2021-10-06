@@ -1,5 +1,5 @@
 import React from "react";
-import { VscHome, VscFoldUp, VscVmRunning, VscAccount } from "react-icons/vsc";
+import {  VscAccount } from "react-icons/vsc";
 import fetchCategory from "../../services/requests";
 import { Link } from "wouter";
 
@@ -18,11 +18,6 @@ function Navbar() {
                 <div>
                     <nav className="py-4 md:py-6">
                         <ul className="flex flex-grow justify-evenly animation-cubic ">
-                            <li className="">
-                                <Link href="/">
-                                    <a className="relative link">Home</a>
-                                </Link>
-                            </li>
 
                             {Object.entries(fetchCategory).map(
                                 ([key, { title, url }]) => (
